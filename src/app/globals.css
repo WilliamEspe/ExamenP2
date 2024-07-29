@@ -1,0 +1,270 @@
+/* src/app/globals.css */
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1b1b1b; /* Dark background */
+  color: #e2e2e2; /* Light text */
+  line-height: 1.6;
+}
+
+header {
+  background-color: #0a74da; /* Blue background */
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+header nav button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+header nav button:hover {
+  background-color: #005bb5; /* Darker blue */
+  border-radius: 4px;
+}
+
+main {
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  background-color: #ffcc00; /* Gold background */
+  color: black; /* Black text */
+  border: none;
+  padding: 5px 10px; /* Adjust the button padding */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8rem; /* Adjust the button font size */
+  margin: 0.5rem 0;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e6b800; /* Darker gold */
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #333; /* Dark input background */
+  color: #e2e2e2; /* Light text */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #333; /* Dark background */
+  border: 1px solid #555;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li h3 {
+  margin-bottom: 0.5rem;
+}
+
+li p {
+  margin-bottom: 1rem;
+}
+
+li button {
+  margin-right: 0.5rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+nav ul li {
+  background: none;
+  border: none;
+  color: #ffcc00; /* Gold text */
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+}
+
+.form-container {
+  background-color: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+.form-container label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #005bb5;
+}
+
+.link {
+  display: block;
+  margin-top: 10px;
+  text-align: center;
+  color: #0070f3;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.logout-button {
+  background-color: #ff5733; /* Different color for logout button */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.logout-button:hover {
+  background-color: #e04e2a;
+}
+
+.task-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-column {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.task-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 5px;
+  position: relative;
+}
+
+.task-item.completed {
+  background-color: #28a745; /* Green for completed tasks */
+  color: #fff;
+  text-decoration: line-through;
+}
+
+.task-item.in-progress {
+  background-color: #17a2b8; /* Blue for in-progress tasks */
+  color: #fff;
+}
+
+.task-item button {
+  margin-right: 5px;
+  padding: 5px 10px; /* Adjust button padding */
+  font-size: 0.8rem; /* Adjust button font size */
+}
+
+.task-item button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logout-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #c82333;
+}
